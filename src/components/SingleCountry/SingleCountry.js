@@ -6,7 +6,7 @@ const SingleCountry = () => {
     const { name } = useParams();
     console.log(name);
     const [country, setCountry] = useState([]);
-    const { name: countryName, flag, capital, region, population, area } = country;
+    const { name: countryName, flag, capital, region, population, area, languages } = country;
 
     useEffect(() => {
         const url = `
@@ -34,6 +34,7 @@ const SingleCountry = () => {
                         <p>Region: {region}</p>
                         <p>Population: {population}</p>
                         <p>Area: {area}</p>
+                        <p>Language: {languages?.[0].name}</p>
                         <Button as={Link} to="/" variant="primary">
                             Back
                         </Button>

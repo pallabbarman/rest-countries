@@ -1,12 +1,11 @@
 .form {
     background-color: rgb(11, 11, 39);
-    padding: 15px;
+    padding: 22px;
     border: none;
     border-radius: 25px;
 }
 #btn {
     border-radius: 1.5rem;
-    padding: 6px 15px;
+    padding: 9px 20px;
     position: absolute;
-    right: 211px;
 }
