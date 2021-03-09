@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, Card } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const CountryDetails = (props) => {
     const { country } = props;
@@ -15,7 +16,9 @@ const CountryDetails = (props) => {
                 <Card.Body>
                     <div className="text-center">
                         <Card.Title>{name}</Card.Title>
-                        <Button variant="outline-primary">Details</Button>
+                        <Button as={Link} to={`/country/${name}`} variant="outline-primary">
+                            Details
+                        </Button>
                     </div>
                 </Card.Body>
             </Card>

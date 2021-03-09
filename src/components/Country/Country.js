@@ -19,9 +19,12 @@ const Country = () => {
                 <br />
                 <Row>
                     {countries.map((country) => (
-                        <CountryDetails country={country} />
+                        <CountryDetails country={country} key={country.alpha3Code} />
                     ))}
                 </Row>
+                <br />
+                <br />
+                <br />
             </Container>
         </div>
     );
